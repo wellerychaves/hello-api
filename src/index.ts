@@ -12,6 +12,6 @@ async function fMizera() {
 const app = new Elysia()
 	.get("/", () => "Hello Elysia")
 	.get("/mizera", () => fMizera())
-	.listen(3000);
+	.listen(10000);
 
 console.log(`🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`);
